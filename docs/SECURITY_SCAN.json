@@ -1,0 +1,6 @@
+{
+  "files_scanned": 94,
+  "known_credential_values_checked": 1,
+  "issues": [],
+  "method": "Compare selected release text with credential literals extracted from private source; scan private paths/hosts, private-key headers and GitHub token patterns; compile all Python files."
+}

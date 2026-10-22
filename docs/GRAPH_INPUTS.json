@@ -1,0 +1,27 @@
+{
+  "recorded_on": "2026-10-22",
+  "graphs": [
+    {
+      "filename": "V1_homosapiens_1N_9E.gpickle",
+      "sha256": "badc15f0053bfbbe96a0b3f0e2c979032a3ca398c85a873cc70061c56e98614a",
+      "bytes": 898933729,
+      "nodes": 1069584,
+      "edges": 9207191,
+      "node_types": 20,
+      "relationship_types": 80,
+      "file_date": "2024-10-14",
+      "role": "DWPC and capped path-gene extraction"
+    },
+    {
+      "filename": "spoke_subnetwork_human_focused.gpickle",
+      "sha256": "98d5d4c5262a7f6fc3f553a5be9aa670b0d2b68622b64f5a96116928e711a3fa",
+      "bytes": 3199517561,
+      "nodes": 4126965,
+      "edges": 21175451,
+      "node_types": 28,
+      "file_date": "2025-06-27",
+      "role": "Personalized PageRank"
+    }
+  ],
+  "note": "Hashes identify the files currently preserved from the study. File dates are not verified SPOKE release dates. Neo4j development queries do not have an immutable snapshot identifier."
+}

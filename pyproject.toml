@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spoke-menopause"
+version = "1.0.0"
+description = "Analysis code and processed results for the SPOKE menopause and brain aging study"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "pandas>=2", "scipy>=1.10", "networkx>=3", "matplotlib>=3.7", "requests>=2.28"]
+
+[project.optional-dependencies]
+graph = ["neo4j>=5", "PyYAML>=6", "tqdm>=4", "gseapy>=1.1", "seaborn>=0.13", "matplotlib-venn>=1.1"]
+test = ["pytest>=8"]
+
+[project.scripts]
+spoke-menopause = "spoke_menopause.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

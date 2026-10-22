@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-22",
+  "unit_tests_passed": 8,
+  "offline_checks_passed": 122,
+  "offline_checks_failed": 0,
+  "workbook_rows_compared": 76893,
+  "workbook_mismatches": 0,
+  "rendered_panels": 14,
+  "python_source_compile": "passed",
+  "secret_scan": "passed; see SECURITY_SCAN.json",
+  "full_graph_recomputation_during_packaging": false
+}

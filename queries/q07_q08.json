@@ -1,0 +1,808 @@
+{
+  "tamoxifen_identity": {
+    "cypher": "MATCH (c:Compound) WHERE toLower(c.name)=$name RETURN c.identifier AS id,c.name AS name ORDER BY id",
+    "parameters": {
+      "name": "tamoxifen"
+    }
+  },
+  "letrozole_identity": {
+    "cypher": "MATCH (c:Compound) WHERE toLower(c.name)=$name RETURN c.identifier AS id,c.name AS name ORDER BY id",
+    "parameters": {
+      "name": "letrozole"
+    }
+  },
+  "goserelin_identity": {
+    "cypher": "MATCH (c:Compound) WHERE toLower(c.name)=$name RETURN c.identifier AS id,c.name AS name ORDER BY id",
+    "parameters": {
+      "name": "goserelin"
+    }
+  },
+  "leuprolide_identity": {
+    "cypher": "MATCH (c:Compound) WHERE toLower(c.name)=$name RETURN c.identifier AS id,c.name AS name ORDER BY id",
+    "parameters": {
+      "name": "leuprolide"
+    }
+  },
+  "fezolinetant_identity": {
+    "cypher": "MATCH (c:Compound) WHERE toLower(c.name)=$name RETURN c.identifier AS id,c.name AS name ORDER BY id",
+    "parameters": {
+      "name": "fezolinetant"
+    }
+  },
+  "tamoxifen_routes": {
+    "cypher": "MATCH (a:Compound {identifier:$id})-[r1:DOWNREGULATES_CdG|UPREGULATES_CuG]-(b:Gene)-[r2:DOWNREGULATES_GPdG|DOWNREGULATES_KGdG|UPREGULATES_KGuG|UPREGULATES_GPuG]-(c:Gene)-[r3:ASSOCIATES_DaG]-(d:Disease {identifier:\"DOID:1307\"})\n    RETURN a.identifier AS compound_id,a.name AS compound,b.identifier AS first_gene_id,b.name AS first_gene,c.identifier AS second_gene_id,c.name AS second_gene,type(r1) AS edge1,type(r2) AS edge2,type(r3) AS edge3,d.identifier AS disease_id ORDER BY first_gene,second_gene,edge1,edge2",
+    "parameters": {
+      "id": "inchikey:NKANXQFJJICGDU-QPLCGJKRSA-N"
+    }
+  },
+  "letrozole_routes": {
+    "cypher": "MATCH (a:Compound {identifier:$id})-[r1:DOWNREGULATES_CdG|UPREGULATES_CuG]-(b:Gene)-[r2:DOWNREGULATES_GPdG|DOWNREGULATES_KGdG|UPREGULATES_KGuG|UPREGULATES_GPuG]-(c:Gene)-[r3:ASSOCIATES_DaG]-(d:Disease {identifier:\"DOID:1307\"})\n    RETURN a.identifier AS compound_id,a.name AS compound,b.identifier AS first_gene_id,b.name AS first_gene,c.identifier AS second_gene_id,c.name AS second_gene,type(r1) AS edge1,type(r2) AS edge2,type(r3) AS edge3,d.identifier AS disease_id ORDER BY first_gene,second_gene,edge1,edge2",
+    "parameters": {
+      "id": "inchikey:HPJKCIUCZWXJDR-UHFFFAOYSA-N"
+    }
+  },
+  "goserelin_routes": {
+    "cypher": "MATCH (a:Compound {identifier:$id})-[r1:DOWNREGULATES_CdG|UPREGULATES_CuG]-(b:Gene)-[r2:DOWNREGULATES_GPdG|DOWNREGULATES_KGdG|UPREGULATES_KGuG|UPREGULATES_GPuG]-(c:Gene)-[r3:ASSOCIATES_DaG]-(d:Disease {identifier:\"DOID:1307\"})\n    RETURN a.identifier AS compound_id,a.name AS compound,b.identifier AS first_gene_id,b.name AS first_gene,c.identifier AS second_gene_id,c.name AS second_gene,type(r1) AS edge1,type(r2) AS edge2,type(r3) AS edge3,d.identifier AS disease_id ORDER BY first_gene,second_gene,edge1,edge2",
+    "parameters": {
+      "id": "inchikey:BLCLNMBMMGCOAS-URPVMXJPSA-N"
+    }
+  },
+  "leuprolide_routes": {
+    "cypher": "MATCH (a:Compound {identifier:$id})-[r1:DOWNREGULATES_CdG|UPREGULATES_CuG]-(b:Gene)-[r2:DOWNREGULATES_GPdG|DOWNREGULATES_KGdG|UPREGULATES_KGuG|UPREGULATES_GPuG]-(c:Gene)-[r3:ASSOCIATES_DaG]-(d:Disease {identifier:\"DOID:1307\"})\n    RETURN a.identifier AS compound_id,a.name AS compound,b.identifier AS first_gene_id,b.name AS first_gene,c.identifier AS second_gene_id,c.name AS second_gene,type(r1) AS edge1,type(r2) AS edge2,type(r3) AS edge3,d.identifier AS disease_id ORDER BY first_gene,second_gene,edge1,edge2",
+    "parameters": {
+      "id": "inchikey:GFIJNRVAKGFPGQ-LIJARHBVSA-N"
+    }
+  },
+  "fezolinetant_cgps_details": {
+    "cypher": "MATCH (a:Compound {identifier:$id})-[:BINDS_CbP]->(p:Protein)<-[:ENCODES_GeP]-(g:Gene)\n    OPTIONAL MATCH (g)-[r:ASSOCIATES_DaG|EXPRESSEDIN_GeiD|MARKER_POS_GmpD|MARKER_NEG_GmnD]-(d:Disease)\n    WHERE any(kw IN $kws WHERE toLower(d.name) CONTAINS kw)\n    RETURN DISTINCT a.identifier AS compound_id,a.name AS compound,p.identifier AS protein_id,p.name AS protein,g.identifier AS gene_id,g.name AS gene,d.identifier AS disease_id,d.name AS disease,type(r) AS gene_disease_edge ORDER BY gene,protein_id,disease_id",
+    "parameters": {
+      "id": "inchikey:PPSNFPASKFYPMN-SECBINFHSA-N",
+      "kws": [
+        "cancer",
+        "carcinoma",
+        "neoplasm",
+        "tumor",
+        "tumour",
+        "lymphoma",
+        "leukemia",
+        "myeloma",
+        "sarcoma"
+      ]
+    }
+  },
+  "elinzanetant_cgps_details": {
+    "cypher": "MATCH (a:Compound {identifier:$id})-[:BINDS_CbP]->(p:Protein)<-[:ENCODES_GeP]-(g:Gene)\n    OPTIONAL MATCH (g)-[r:ASSOCIATES_DaG|EXPRESSEDIN_GeiD|MARKER_POS_GmpD|MARKER_NEG_GmnD]-(d:Disease)\n    WHERE any(kw IN $kws WHERE toLower(d.name) CONTAINS kw)\n    RETURN DISTINCT a.identifier AS compound_id,a.name AS compound,p.identifier AS protein_id,p.name AS protein,g.identifier AS gene_id,g.name AS gene,d.identifier AS disease_id,d.name AS disease,type(r) AS gene_disease_edge ORDER BY gene,protein_id,disease_id",
+    "parameters": {
+      "id": "inchikey:DWRIJNIPBUFCQS-DQEYMECFSA-N",
+      "kws": [
+        "cancer",
+        "carcinoma",
+        "neoplasm",
+        "tumor",
+        "tumour",
+        "lymphoma",
+        "leukemia",
+        "myeloma",
+        "sarcoma"
+      ]
+    }
+  },
+  "tamoxifen_cgps_details": {
+    "cypher": "MATCH (a:Compound {identifier:$id})-[:BINDS_CbP]->(p:Protein)<-[:ENCODES_GeP]-(g:Gene)\n    OPTIONAL MATCH (g)-[r:ASSOCIATES_DaG|EXPRESSEDIN_GeiD|MARKER_POS_GmpD|MARKER_NEG_GmnD]-(d:Disease)\n    WHERE any(kw IN $kws WHERE toLower(d.name) CONTAINS kw)\n    RETURN DISTINCT a.identifier AS compound_id,a.name AS compound,p.identifier AS protein_id,p.name AS protein,g.identifier AS gene_id,g.name AS gene,d.identifier AS disease_id,d.name AS disease,type(r) AS gene_disease_edge ORDER BY gene,protein_id,disease_id",
+    "parameters": {
+      "id": "inchikey:NKANXQFJJICGDU-QPLCGJKRSA-N",
+      "kws": [
+        "cancer",
+        "carcinoma",
+        "neoplasm",
+        "tumor",
+        "tumour",
+        "lymphoma",
+        "leukemia",
+        "myeloma",
+        "sarcoma"
+      ]
+    }
+  },
+  "letrozole_cgps_details": {
+    "cypher": "MATCH (a:Compound {identifier:$id})-[:BINDS_CbP]->(p:Protein)<-[:ENCODES_GeP]-(g:Gene)\n    OPTIONAL MATCH (g)-[r:ASSOCIATES_DaG|EXPRESSEDIN_GeiD|MARKER_POS_GmpD|MARKER_NEG_GmnD]-(d:Disease)\n    WHERE any(kw IN $kws WHERE toLower(d.name) CONTAINS kw)\n    RETURN DISTINCT a.identifier AS compound_id,a.name AS compound,p.identifier AS protein_id,p.name AS protein,g.identifier AS gene_id,g.name AS gene,d.identifier AS disease_id,d.name AS disease,type(r) AS gene_disease_edge ORDER BY gene,protein_id,disease_id",
+    "parameters": {
+      "id": "inchikey:HPJKCIUCZWXJDR-UHFFFAOYSA-N",
+      "kws": [
+        "cancer",
+        "carcinoma",
+        "neoplasm",
+        "tumor",
+        "tumour",
+        "lymphoma",
+        "leukemia",
+        "myeloma",
+        "sarcoma"
+      ]
+    }
+  },
+  "goserelin_cgps_details": {
+    "cypher": "MATCH (a:Compound {identifier:$id})-[:BINDS_CbP]->(p:Protein)<-[:ENCODES_GeP]-(g:Gene)\n    OPTIONAL MATCH (g)-[r:ASSOCIATES_DaG|EXPRESSEDIN_GeiD|MARKER_POS_GmpD|MARKER_NEG_GmnD]-(d:Disease)\n    WHERE any(kw IN $kws WHERE toLower(d.name) CONTAINS kw)\n    RETURN DISTINCT a.identifier AS compound_id,a.name AS compound,p.identifier AS protein_id,p.name AS protein,g.identifier AS gene_id,g.name AS gene,d.identifier AS disease_id,d.name AS disease,type(r) AS gene_disease_edge ORDER BY gene,protein_id,disease_id",
+    "parameters": {
+      "id": "inchikey:BLCLNMBMMGCOAS-URPVMXJPSA-N",
+      "kws": [
+        "cancer",
+        "carcinoma",
+        "neoplasm",
+        "tumor",
+        "tumour",
+        "lymphoma",
+        "leukemia",
+        "myeloma",
+        "sarcoma"
+      ]
+    }
+  },
+  "fig6a_export_edge_check": {
+    "cypher": "UNWIND $edges AS e MATCH (a {identifier:e.source}) MATCH (b {identifier:e.target})\n    OPTIONAL MATCH (a)-[r]-(b) WHERE type(r)=e.edge_type\n    RETURN e.source AS source,e.target AS target,e.edge_type AS edge_type,count(r) AS matching_edges,collect(DISTINCT startNode(r).identifier) AS actual_sources",
+    "parameters": {
+      "edges": [
+        {
+          "network": "elinzanetant 3-hop",
+          "source": "inchikey:DWRIJNIPBUFCQS-DQEYMECFSA-N",
+          "source_label": "Elinzanetant",
+          "target": "P29371",
+          "target_label": "NK3R_HUMAN",
+          "interaction": "BINDS_CbP",
+          "edge_type": "BINDS_CbP",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "elinzanetant 3-hop",
+          "source": "P29371",
+          "source_label": "NK3R_HUMAN",
+          "target": "inchikey:YASAKCUCGLMORW-UHFFFAOYSA-N",
+          "target_label": "Rosiglitazone",
+          "interaction": "INTERACTS_PiC",
+          "edge_type": "INTERACTS_PiC",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "elinzanetant 3-hop",
+          "source": "inchikey:YASAKCUCGLMORW-UHFFFAOYSA-N",
+          "source_label": "Rosiglitazone",
+          "target": "DOID:10652",
+          "target_label": "Alzheimer's disease",
+          "interaction": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "edge_type": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "elinzanetant 3-hop",
+          "source": "P29371",
+          "source_label": "NK3R_HUMAN",
+          "target": "inchikey:UCTWMZQNUQWSLP-VIFPVBQESA-N",
+          "target_label": "Epinephrine",
+          "interaction": "INTERACTS_PiC",
+          "edge_type": "INTERACTS_PiC",
+          "directed": "True",
+          "shown_in_Fig6a": "False"
+        },
+        {
+          "network": "elinzanetant 3-hop",
+          "source": "inchikey:UCTWMZQNUQWSLP-VIFPVBQESA-N",
+          "source_label": "Epinephrine",
+          "target": "DOID:1289",
+          "target_label": "neurodegenerative disease",
+          "interaction": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "edge_type": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "directed": "True",
+          "shown_in_Fig6a": "False"
+        },
+        {
+          "network": "elinzanetant 3-hop",
+          "source": "P29371",
+          "source_label": "NK3R_HUMAN",
+          "target": "inchikey:ODKSFYDXXFIFQN-BYPYZUCNSA-N",
+          "target_label": "Arginine",
+          "interaction": "INTERACTS_PiC",
+          "edge_type": "INTERACTS_PiC",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "elinzanetant 3-hop",
+          "source": "inchikey:ODKSFYDXXFIFQN-BYPYZUCNSA-N",
+          "source_label": "Arginine",
+          "target": "DOID:10652",
+          "target_label": "Alzheimer's disease",
+          "interaction": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "edge_type": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "elinzanetant 3-hop",
+          "source": "inchikey:DWRIJNIPBUFCQS-DQEYMECFSA-N",
+          "source_label": "Elinzanetant",
+          "target": "P25103",
+          "target_label": "NK1R_HUMAN",
+          "interaction": "BINDS_CbP",
+          "edge_type": "BINDS_CbP",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "elinzanetant 3-hop",
+          "source": "P25103",
+          "source_label": "NK1R_HUMAN",
+          "target": "inchikey:AHOUBRCZNHFOSL-YOEHRIQHSA-N",
+          "target_label": "Paroxetine",
+          "interaction": "BINDS_CbP",
+          "edge_type": "BINDS_CbP",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "elinzanetant 3-hop",
+          "source": "inchikey:AHOUBRCZNHFOSL-YOEHRIQHSA-N",
+          "source_label": "Paroxetine",
+          "target": "DOID:1307",
+          "target_label": "dementia",
+          "interaction": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "edge_type": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "elinzanetant 3-hop",
+          "source": "P25103",
+          "source_label": "NK1R_HUMAN",
+          "target": "inchikey:FFTVPQUHLQBXQZ-KVUCHLLUSA-N",
+          "target_label": "Minocycline",
+          "interaction": "INTERACTS_PiC",
+          "edge_type": "INTERACTS_PiC",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "elinzanetant 3-hop",
+          "source": "inchikey:FFTVPQUHLQBXQZ-KVUCHLLUSA-N",
+          "source_label": "Minocycline",
+          "target": "DOID:10652",
+          "target_label": "Alzheimer's disease",
+          "interaction": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "edge_type": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "elinzanetant 3-hop",
+          "source": "inchikey:FFTVPQUHLQBXQZ-KVUCHLLUSA-N",
+          "source_label": "Minocycline",
+          "target": "DOID:1561",
+          "target_label": "cognitive disorder",
+          "interaction": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "edge_type": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "elinzanetant 3-hop",
+          "source": "P25103",
+          "source_label": "NK1R_HUMAN",
+          "target": "inchikey:YQEZLKZALYSWHR-UHFFFAOYSA-N",
+          "target_label": "Ketamine",
+          "interaction": "INTERACTS_PiC",
+          "edge_type": "INTERACTS_PiC",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "elinzanetant 3-hop",
+          "source": "inchikey:YQEZLKZALYSWHR-UHFFFAOYSA-N",
+          "source_label": "Ketamine",
+          "target": "DOID:1307",
+          "target_label": "dementia",
+          "interaction": "TREATS_CtD",
+          "edge_type": "TREATS_CtD",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "elinzanetant 3-hop",
+          "source": "inchikey:YQEZLKZALYSWHR-UHFFFAOYSA-N",
+          "source_label": "Ketamine",
+          "target": "DOID:1307",
+          "target_label": "dementia",
+          "interaction": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "edge_type": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "directed": "True",
+          "shown_in_Fig6a": "False"
+        },
+        {
+          "network": "elinzanetant 3-hop",
+          "source": "P25103",
+          "source_label": "NK1R_HUMAN",
+          "target": "inchikey:YASAKCUCGLMORW-UHFFFAOYSA-N",
+          "target_label": "Rosiglitazone",
+          "interaction": "INTERACTS_PiC",
+          "edge_type": "INTERACTS_PiC",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "elinzanetant 3-hop",
+          "source": "P25103",
+          "source_label": "NK1R_HUMAN",
+          "target": "inchikey:BQJCRHHNABKAKU-KBQPJGBKSA-N",
+          "target_label": "Morphine",
+          "interaction": "INTERACTS_PiC",
+          "edge_type": "INTERACTS_PiC",
+          "directed": "True",
+          "shown_in_Fig6a": "False"
+        },
+        {
+          "network": "elinzanetant 3-hop",
+          "source": "inchikey:BQJCRHHNABKAKU-KBQPJGBKSA-N",
+          "source_label": "Morphine",
+          "target": "DOID:1307",
+          "target_label": "dementia",
+          "interaction": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "edge_type": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "directed": "True",
+          "shown_in_Fig6a": "False"
+        },
+        {
+          "network": "elinzanetant 3-hop",
+          "source": "P25103",
+          "source_label": "NK1R_HUMAN",
+          "target": "inchikey:MEZLKOACVSPNER-GFCCVEGCSA-N",
+          "target_label": "Selegiline",
+          "interaction": "INTERACTS_PiC",
+          "edge_type": "INTERACTS_PiC",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "elinzanetant 3-hop",
+          "source": "inchikey:MEZLKOACVSPNER-GFCCVEGCSA-N",
+          "source_label": "Selegiline",
+          "target": "DOID:1561",
+          "target_label": "cognitive disorder",
+          "interaction": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "edge_type": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "elinzanetant 3-hop",
+          "source": "P25103",
+          "source_label": "NK1R_HUMAN",
+          "target": "inchikey:UCTWMZQNUQWSLP-VIFPVBQESA-N",
+          "target_label": "Epinephrine",
+          "interaction": "INTERACTS_PiC",
+          "edge_type": "INTERACTS_PiC",
+          "directed": "True",
+          "shown_in_Fig6a": "False"
+        },
+        {
+          "network": "elinzanetant 3-hop",
+          "source": "P25103",
+          "source_label": "NK1R_HUMAN",
+          "target": "inchikey:ODKSFYDXXFIFQN-BYPYZUCNSA-N",
+          "target_label": "Arginine",
+          "interaction": "INTERACTS_PiC",
+          "edge_type": "INTERACTS_PiC",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "inchikey:PPSNFPASKFYPMN-SECBINFHSA-N",
+          "source_label": "Fezolinetant",
+          "target": "C1ID52",
+          "target_label": "C1ID52_HUMAN",
+          "interaction": "BINDS_CbP",
+          "edge_type": "BINDS_CbP",
+          "directed": "True",
+          "shown_in_Fig6a": "False"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "gene:CYP2D6",
+          "source_label": "CYP2D6",
+          "target": "C1ID52",
+          "target_label": "C1ID52_HUMAN",
+          "interaction": "ENCODES_GeP",
+          "edge_type": "ENCODES_GeP",
+          "directed": "True",
+          "shown_in_Fig6a": "False"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "gene:CYP2D6",
+          "source_label": "CYP2D6",
+          "target": "DOID:1561",
+          "target_label": "cognitive disorder",
+          "interaction": "ASSOCIATES_DaG",
+          "edge_type": "ASSOCIATES_DaG",
+          "directed": "True",
+          "shown_in_Fig6a": "False"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "inchikey:PPSNFPASKFYPMN-SECBINFHSA-N",
+          "source_label": "Fezolinetant",
+          "target": "P10635",
+          "target_label": "CP2D6_HUMAN",
+          "interaction": "BINDS_CbP",
+          "edge_type": "BINDS_CbP",
+          "directed": "True",
+          "shown_in_Fig6a": "False"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "gene:CYP2D6",
+          "source_label": "CYP2D6",
+          "target": "P10635",
+          "target_label": "CP2D6_HUMAN",
+          "interaction": "ENCODES_GeP",
+          "edge_type": "ENCODES_GeP",
+          "directed": "True",
+          "shown_in_Fig6a": "False"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "inchikey:PPSNFPASKFYPMN-SECBINFHSA-N",
+          "source_label": "Fezolinetant",
+          "target": "P21452",
+          "target_label": "NK2R_HUMAN",
+          "interaction": "BINDS_CbP",
+          "edge_type": "BINDS_CbP",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "P21452",
+          "source_label": "NK2R_HUMAN",
+          "target": "inchikey:GZUITABIAKMVPG-UHFFFAOYSA-N",
+          "target_label": "Raloxifene",
+          "interaction": "BINDS_CbP",
+          "edge_type": "BINDS_CbP",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "inchikey:GZUITABIAKMVPG-UHFFFAOYSA-N",
+          "source_label": "Raloxifene",
+          "target": "DOID:10652",
+          "target_label": "Alzheimer's disease",
+          "interaction": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "edge_type": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "P21452",
+          "source_label": "NK2R_HUMAN",
+          "target": "inchikey:UCHDWCPVSPXUMX-TZIWLTJVSA-N",
+          "target_label": "Montelukast",
+          "interaction": "BINDS_CbP",
+          "edge_type": "BINDS_CbP",
+          "directed": "True",
+          "shown_in_Fig6a": "False"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "inchikey:UCHDWCPVSPXUMX-TZIWLTJVSA-N",
+          "source_label": "Montelukast",
+          "target": "DOID:10652",
+          "target_label": "Alzheimer's disease",
+          "interaction": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "edge_type": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "directed": "True",
+          "shown_in_Fig6a": "False"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "P21452",
+          "source_label": "NK2R_HUMAN",
+          "target": "inchikey:PLDUPXSUYLZYBN-UHFFFAOYSA-N",
+          "target_label": "Fluphenazine",
+          "interaction": "BINDS_CbP",
+          "edge_type": "BINDS_CbP",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "inchikey:PLDUPXSUYLZYBN-UHFFFAOYSA-N",
+          "source_label": "Fluphenazine",
+          "target": "DOID:1307",
+          "target_label": "dementia",
+          "interaction": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "edge_type": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "P21452",
+          "source_label": "NK2R_HUMAN",
+          "target": "inchikey:YASAKCUCGLMORW-UHFFFAOYSA-N",
+          "target_label": "Rosiglitazone",
+          "interaction": "INTERACTS_PiC",
+          "edge_type": "INTERACTS_PiC",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "inchikey:YASAKCUCGLMORW-UHFFFAOYSA-N",
+          "source_label": "Rosiglitazone",
+          "target": "DOID:10652",
+          "target_label": "Alzheimer's disease",
+          "interaction": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "edge_type": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "P21452",
+          "source_label": "NK2R_HUMAN",
+          "target": "inchikey:UCTWMZQNUQWSLP-VIFPVBQESA-N",
+          "target_label": "Epinephrine",
+          "interaction": "INTERACTS_PiC",
+          "edge_type": "INTERACTS_PiC",
+          "directed": "True",
+          "shown_in_Fig6a": "False"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "inchikey:UCTWMZQNUQWSLP-VIFPVBQESA-N",
+          "source_label": "Epinephrine",
+          "target": "DOID:1289",
+          "target_label": "neurodegenerative disease",
+          "interaction": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "edge_type": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "directed": "True",
+          "shown_in_Fig6a": "False"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "P21452",
+          "source_label": "NK2R_HUMAN",
+          "target": "inchikey:ODKSFYDXXFIFQN-BYPYZUCNSA-N",
+          "target_label": "Arginine",
+          "interaction": "INTERACTS_PiC",
+          "edge_type": "INTERACTS_PiC",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "inchikey:ODKSFYDXXFIFQN-BYPYZUCNSA-N",
+          "source_label": "Arginine",
+          "target": "DOID:10652",
+          "target_label": "Alzheimer's disease",
+          "interaction": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "edge_type": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "inchikey:PPSNFPASKFYPMN-SECBINFHSA-N",
+          "source_label": "Fezolinetant",
+          "target": "P25103",
+          "target_label": "NK1R_HUMAN",
+          "interaction": "BINDS_CbP",
+          "edge_type": "BINDS_CbP",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "P25103",
+          "source_label": "NK1R_HUMAN",
+          "target": "inchikey:AHOUBRCZNHFOSL-YOEHRIQHSA-N",
+          "target_label": "Paroxetine",
+          "interaction": "BINDS_CbP",
+          "edge_type": "BINDS_CbP",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "inchikey:AHOUBRCZNHFOSL-YOEHRIQHSA-N",
+          "source_label": "Paroxetine",
+          "target": "DOID:1307",
+          "target_label": "dementia",
+          "interaction": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "edge_type": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "P25103",
+          "source_label": "NK1R_HUMAN",
+          "target": "inchikey:FFTVPQUHLQBXQZ-KVUCHLLUSA-N",
+          "target_label": "Minocycline",
+          "interaction": "INTERACTS_PiC",
+          "edge_type": "INTERACTS_PiC",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "inchikey:FFTVPQUHLQBXQZ-KVUCHLLUSA-N",
+          "source_label": "Minocycline",
+          "target": "DOID:10652",
+          "target_label": "Alzheimer's disease",
+          "interaction": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "edge_type": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "inchikey:FFTVPQUHLQBXQZ-KVUCHLLUSA-N",
+          "source_label": "Minocycline",
+          "target": "DOID:1561",
+          "target_label": "cognitive disorder",
+          "interaction": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "edge_type": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "P25103",
+          "source_label": "NK1R_HUMAN",
+          "target": "inchikey:YQEZLKZALYSWHR-UHFFFAOYSA-N",
+          "target_label": "Ketamine",
+          "interaction": "INTERACTS_PiC",
+          "edge_type": "INTERACTS_PiC",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "inchikey:YQEZLKZALYSWHR-UHFFFAOYSA-N",
+          "source_label": "Ketamine",
+          "target": "DOID:1307",
+          "target_label": "dementia",
+          "interaction": "TREATS_CtD",
+          "edge_type": "TREATS_CtD",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "P25103",
+          "source_label": "NK1R_HUMAN",
+          "target": "inchikey:YASAKCUCGLMORW-UHFFFAOYSA-N",
+          "target_label": "Rosiglitazone",
+          "interaction": "INTERACTS_PiC",
+          "edge_type": "INTERACTS_PiC",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "P25103",
+          "source_label": "NK1R_HUMAN",
+          "target": "inchikey:BQJCRHHNABKAKU-KBQPJGBKSA-N",
+          "target_label": "Morphine",
+          "interaction": "INTERACTS_PiC",
+          "edge_type": "INTERACTS_PiC",
+          "directed": "True",
+          "shown_in_Fig6a": "False"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "inchikey:BQJCRHHNABKAKU-KBQPJGBKSA-N",
+          "source_label": "Morphine",
+          "target": "DOID:1307",
+          "target_label": "dementia",
+          "interaction": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "edge_type": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "directed": "True",
+          "shown_in_Fig6a": "False"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "P25103",
+          "source_label": "NK1R_HUMAN",
+          "target": "inchikey:MEZLKOACVSPNER-GFCCVEGCSA-N",
+          "target_label": "Selegiline",
+          "interaction": "INTERACTS_PiC",
+          "edge_type": "INTERACTS_PiC",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "inchikey:MEZLKOACVSPNER-GFCCVEGCSA-N",
+          "source_label": "Selegiline",
+          "target": "DOID:1561",
+          "target_label": "cognitive disorder",
+          "interaction": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "edge_type": "IN_CLINICAL_TRIALS_FOR_CictD",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "P25103",
+          "source_label": "NK1R_HUMAN",
+          "target": "inchikey:UCTWMZQNUQWSLP-VIFPVBQESA-N",
+          "target_label": "Epinephrine",
+          "interaction": "INTERACTS_PiC",
+          "edge_type": "INTERACTS_PiC",
+          "directed": "True",
+          "shown_in_Fig6a": "False"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "P25103",
+          "source_label": "NK1R_HUMAN",
+          "target": "inchikey:ODKSFYDXXFIFQN-BYPYZUCNSA-N",
+          "target_label": "Arginine",
+          "interaction": "INTERACTS_PiC",
+          "edge_type": "INTERACTS_PiC",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "inchikey:PPSNFPASKFYPMN-SECBINFHSA-N",
+          "source_label": "Fezolinetant",
+          "target": "P29371",
+          "target_label": "NK3R_HUMAN",
+          "interaction": "BINDS_CbP",
+          "edge_type": "BINDS_CbP",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "P29371",
+          "source_label": "NK3R_HUMAN",
+          "target": "inchikey:YASAKCUCGLMORW-UHFFFAOYSA-N",
+          "target_label": "Rosiglitazone",
+          "interaction": "INTERACTS_PiC",
+          "edge_type": "INTERACTS_PiC",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "P29371",
+          "source_label": "NK3R_HUMAN",
+          "target": "inchikey:UCTWMZQNUQWSLP-VIFPVBQESA-N",
+          "target_label": "Epinephrine",
+          "interaction": "INTERACTS_PiC",
+          "edge_type": "INTERACTS_PiC",
+          "directed": "True",
+          "shown_in_Fig6a": "False"
+        },
+        {
+          "network": "fezolinetant mechanistic",
+          "source": "P29371",
+          "source_label": "NK3R_HUMAN",
+          "target": "inchikey:ODKSFYDXXFIFQN-BYPYZUCNSA-N",
+          "target_label": "Arginine",
+          "interaction": "INTERACTS_PiC",
+          "edge_type": "INTERACTS_PiC",
+          "directed": "True",
+          "shown_in_Fig6a": "True"
+        }
+      ]
+    }
+  }
+}

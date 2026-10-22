@@ -1,0 +1,12 @@
+pair,source_id,source_name,target_id,target_name,metapath,length,dwpc,path_count
+Subacute delirium → Dementia,Disease:DOID:8645,Subacute delirium,Disease:DOID:1307,Dementia,RESEMBLES_DrD → ISA_DiD,2,0.0739694331828659,1
+Subacute delirium → Dementia,Disease:DOID:8645,Subacute delirium,Disease:DOID:1307,Dementia,TREATS_CtD → AFFECT_VaC → ASSOCIATES_VaP,3,0.02199552948028,2
+Subacute delirium → Dementia,Disease:DOID:8645,Subacute delirium,Disease:DOID:1307,Dementia,RESEMBLES_DrD → RESEMBLES_DrD → ISA_DiD,3,0.014090336793819,2
+Subacute delirium → Dementia,Disease:DOID:8645,Subacute delirium,Disease:DOID:1307,Dementia,TREATS_CtD → TREATS_CtD → ISA_DiD,3,0.0130365938943621,2
+Subacute delirium → Dementia,Disease:DOID:8645,Subacute delirium,Disease:DOID:1307,Dementia,LOCALIZES_DlA → LOCALIZES_DlA → ISA_DiD,3,0.012026274529916,13
+Subacute delirium → Dementia,Disease:DOID:8645,Subacute delirium,Disease:DOID:1307,Dementia,RESEMBLES_DrD → ASSOCIATES_DaG → ASSOCIATES_DaG,3,0.0120087628174495,56
+Subacute delirium → Dementia,Disease:DOID:8645,Subacute delirium,Disease:DOID:1307,Dementia,RESEMBLES_DrD → ASSOCIATES_VaP → ASSOCIATES_VaP,3,0.0030599761419366,1
+Subacute delirium → Dementia,Disease:DOID:8645,Subacute delirium,Disease:DOID:1307,Dementia,RESEMBLES_DrD → ISA_DiD → ISA_DiD,3,0.0012659901343876,1
+Subacute delirium → Dementia,Disease:DOID:8645,Subacute delirium,Disease:DOID:1307,Dementia,TREATS_CtD → DOWNREGULATES_CdG → ASSOCIATES_DaG,3,0.0010315462918823,18
+Subacute delirium → Dementia,Disease:DOID:8645,Subacute delirium,Disease:DOID:1307,Dementia,LOCALIZES_DlA → EXPRESSES_AeG → ASSOCIATES_DaG,3,0.0005129943070359,66
+Subacute delirium → Dementia,Disease:DOID:8645,Subacute delirium,Disease:DOID:1307,Dementia,TREATS_CtD → UPREGULATES_CuG → ASSOCIATES_DaG,3,0.0002830858593167,7

@@ -1,0 +1,639 @@
+{
+  "checks": [
+    {
+      "check": "40 consecutively numbered supplementary tables",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Every table row matches its header width",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q1: 55 genes; 1500 null pairs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q1: all 55 gene BH values below 0.05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q1: 34 distinct network gene nodes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q2: 27 shared genes and six additional PD mitophagy genes displayed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q2: retained Figure 3B uses shared-set enrichment only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q2 DWPC total: Parkinson's disease",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q2 DWPC total: Vascular dementia",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q2 DWPC total: Frontotemporal dementia",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q3: 15 genes, 36 routes, 8 disease endpoints",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q3: seven selected symptoms; 1891 total",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q4: 14 overlap genes, eight also in PM top 200",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q4: generic dementia marker uses DOID:1307",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q5: 36 triple-overlap genes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q5 Fisher exact: APO enriched in Menopause \u2229 Cognitive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q5 Fisher exact: APO enriched in Menopause",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q5 Fisher exact: APO enriched in Cognitive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6: all 1500 null pair identities and yields match Table 26",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6: real path extraction reproduces 36 observed gene counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: SNCB",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: SNCA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: APP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: PSEN1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: TREM2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: CHMP2B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: BACE1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: LRRK2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: ACHE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: GRN",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: MAPT",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: MAOB",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: SOD1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: DLG4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: HTT",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: BCHE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: PSEN2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: FUS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: C9orf72",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: TARDBP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: GFAP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: IL1B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: PRKN",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: SLC6A3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: AIF1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: YWHAQ",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: BDNF",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: APOE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: CHAT",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: NEFL",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: INS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: VCP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: PRNP",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: TNF",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: ALB",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6 null replay: IL6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6: recomputed BH adjustment matches Table 25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q6: 35 of 36 delirium\u2013dementia genes occur in Q1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q7 CGPS distinct disease count: Fezolinetant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q7 CGPS distinct disease count: Elinzanetant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q7 CGPS distinct disease count: Tamoxifen",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q7 CGPS distinct disease count: Letrozole",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q7 CGPS distinct disease count: Goserelin",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q7: 1000 random scores, 868 nonzero",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q8: 927/174/237 drug-route gene memberships",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q8: 81 shared, 599/2/0 exclusive genes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q8: compound histogram accounts for 550596 nodes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estrone / Alzheimer's disease / Biomarker overlap",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estrone / Alzheimer's disease / Disease hierarchy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estrone / Alzheimer's disease / Gene regulation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estrone / Alzheimer's disease / Genetic variant association",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estrone / Alzheimer's disease / Other",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estrone / Alzheimer's disease / Protein interaction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estrone / Alzheimer's disease / Therapeutic overlap",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estrone / Dementia / Biomarker overlap",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estrone / Dementia / Disease hierarchy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estrone / Dementia / Gene regulation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estrone / Dementia / Genetic variant association",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estrone / Dementia / Other",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estrone / Dementia / Protein interaction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estrone / Dementia / Therapeutic overlap",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estrone / Vascular dementia / Biomarker overlap",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estrone / Vascular dementia / Disease hierarchy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estrone / Vascular dementia / Gene regulation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estrone / Vascular dementia / Genetic variant association",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estrone / Vascular dementia / Other",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estrone / Vascular dementia / Protein interaction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estrone / Vascular dementia / Therapeutic overlap",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estradiol / Alzheimer's disease / Biomarker overlap",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estradiol / Alzheimer's disease / Disease hierarchy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estradiol / Alzheimer's disease / Gene regulation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estradiol / Alzheimer's disease / Genetic variant association",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estradiol / Alzheimer's disease / Other",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estradiol / Alzheimer's disease / Protein interaction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estradiol / Alzheimer's disease / Therapeutic overlap",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estradiol / Dementia / Biomarker overlap",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estradiol / Dementia / Disease hierarchy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estradiol / Dementia / Gene regulation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estradiol / Dementia / Genetic variant association",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estradiol / Dementia / Other",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estradiol / Dementia / Protein interaction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estradiol / Dementia / Therapeutic overlap",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estradiol / Vascular dementia / Biomarker overlap",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estradiol / Vascular dementia / Disease hierarchy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estradiol / Vascular dementia / Gene regulation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estradiol / Vascular dementia / Genetic variant association",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estradiol / Vascular dementia / Other",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estradiol / Vascular dementia / Protein interaction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q9: DWPC total Estradiol / Vascular dementia / Therapeutic overlap",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Q10: 14 queried pharmacogenes, eight connected, 28 edges",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "q01 GO_Biological_Process_2023: Enrichr BH replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "q01 GO_Biological_Process_2023: published overlaps and adjusted P values match raw response",
+      "passed": true,
+      "detail": {
+        "published_terms": 654,
+        "returned_terms": 1541
+      }
+    },
+    {
+      "check": "q02 GO_Biological_Process_2023: Enrichr BH replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "q02 GO_Biological_Process_2023: published overlaps and adjusted P values match raw response",
+      "passed": true,
+      "detail": {
+        "published_terms": 2021,
+        "returned_terms": 2021
+      }
+    },
+    {
+      "check": "q03 GO_Biological_Process_2023: Enrichr BH replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "q03 GO_Biological_Process_2023: published overlaps and adjusted P values match raw response",
+      "passed": true,
+      "detail": {
+        "published_terms": 764,
+        "returned_terms": 764
+      }
+    },
+    {
+      "check": "q03 KEGG_2021_Human: Enrichr BH replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "q03 KEGG_2021_Human: published overlaps and adjusted P values match raw response",
+      "passed": true,
+      "detail": {
+        "published_terms": 41,
+        "returned_terms": 41
+      }
+    },
+    {
+      "check": "q03 Reactome_2022: Enrichr BH replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "q03 Reactome_2022: published overlaps and adjusted P values match raw response",
+      "passed": true,
+      "detail": {
+        "published_terms": 178,
+        "returned_terms": 178
+      }
+    },
+    {
+      "check": "q03 WikiPathway_2023_Human: Enrichr BH replay",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "q03 WikiPathway_2023_Human: published overlaps and adjusted P values match raw response",
+      "passed": true,
+      "detail": {
+        "published_terms": 53,
+        "returned_terms": 53
+      }
+    }
+  ],
+  "passed": 122,
+  "failed": 0,
+  "scope": "Offline consistency and statistic replay; not a fresh SPOKE extraction.",
+  "not_replayed": [
+    "Historical DES cancer-connectivity score: no route export in Table 30.",
+    "Q1 random-pair identities and Q7 random-compound identities were not saved."
+  ]
+}

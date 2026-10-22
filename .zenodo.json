@@ -1,0 +1,12 @@
+{
+  "title": "SPOKE menopause and brain aging: analysis code and processed results",
+  "upload_type": "software",
+  "description": "Version 1.0.0 of the code and processed results accompanying Accelerating the discovery of biological pathways linking menopause to brain aging using biomedical knowledge graphs. Includes sources organized by Q1–Q10, the publication-facing data for 40 supplementary tables, frozen enrichment responses, complete Q6 random-pair records, a tested command-line interface and figure reconstruction code. Full SPOKE graphs and credentials are excluded. Exact historical rerun limitations are documented in README.md and docs/REPRODUCIBILITY.md.",
+  "creators": [{"name": "Peetoom, Braian", "affiliation": "University of California, San Francisco"}],
+  "version": "1.0.0",
+  "publication_date": "2026-10-22",
+  "license": "mit",
+  "access_right": "open",
+  "keywords": ["SPOKE", "menopause", "brain aging", "knowledge graph", "reproducibility"],
+  "related_identifiers": [{"identifier": "https://github.com/Braianpp/spoke-menopause", "relation": "isSupplementTo", "scheme": "url"}]
+}

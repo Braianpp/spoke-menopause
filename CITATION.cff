@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Please cite this versioned software release and the associated manuscript."
+title: "SPOKE menopause and brain aging: analysis code and processed results"
+type: software
+version: 1.0.0
+date-released: 2026-10-22
+authors:
+  - family-names: Peetoom
+    given-names: Braian
+repository-code: "https://github.com/Braianpp/spoke-menopause"
+license: MIT
+keywords:
+  - knowledge graph
+  - SPOKE
+  - menopause
+  - brain aging
+  - reproducibility
+abstract: >-
+  Analysis sources, processed supplementary tables, offline verification,
+  and plotting commands for ten questions connecting menopause and brain aging.
+  Full SPOKE graph files require separate access. Historical reproducibility
+  limitations are documented in the repository.

@@ -1,0 +1,1324 @@
+[
+  {
+    "schema_index": 0,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:12217",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 1,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:XSVMFMHYUFZWBK-NSHDSACASA-N",
+      "Variant:rs429358",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 1,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:ADEBPBSSDYVVLD-UHFFFAOYSA-N",
+      "Variant:rs429358",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 2,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:12217",
+      "Disease:DOID:8725",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 2,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:14464",
+      "Disease:DOID:12217",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 3,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:XSVMFMHYUFZWBK-NSHDSACASA-N",
+      "Disease:DOID:8725",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 3,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:ADEBPBSSDYVVLD-UHFFFAOYSA-N",
+      "Disease:DOID:8725",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 4,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0016525",
+      "Disease:DOID:8725",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 4,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0016525",
+      "Disease:DOID:12217",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 4,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000120",
+      "Disease:DOID:8725",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 4,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Disease:DOID:8725",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 4,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Disease:DOID:12217",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 4,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0002336",
+      "Disease:DOID:8725",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 4,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0006135",
+      "Disease:DOID:8725",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 4,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0002316",
+      "Disease:DOID:8725",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 4,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0002316",
+      "Disease:DOID:12217",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 4,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000956",
+      "Disease:DOID:8725",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 4,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000956",
+      "Disease:DOID:12217",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 4,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0002021",
+      "Disease:DOID:8725",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 4,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0002021",
+      "Disease:DOID:12217",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:12217",
+      "Gene:6620",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:12217",
+      "Gene:6622",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:12217",
+      "Gene:351",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:12217",
+      "Gene:6531",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:12217",
+      "Gene:23435",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:12217",
+      "Gene:5663",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:12217",
+      "Gene:25978",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:12217",
+      "Gene:54209",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:12217",
+      "Gene:5071",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:12217",
+      "Gene:7415",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:12217",
+      "Gene:348",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:12217",
+      "Gene:120892",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:12217",
+      "Gene:2896",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:12217",
+      "Gene:4137",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:3602",
+      "Gene:23621",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:3602",
+      "Gene:43",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:3602",
+      "Gene:7124",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:3602",
+      "Gene:199",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:3602",
+      "Gene:3553",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:3602",
+      "Gene:6622",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:3602",
+      "Gene:3569",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:3602",
+      "Gene:6531",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:3602",
+      "Gene:5663",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:3602",
+      "Gene:4137",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:3602",
+      "Gene:627",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:3602",
+      "Gene:3064",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:3602",
+      "Gene:351",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:3602",
+      "Gene:2670",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:3602",
+      "Gene:4129",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:936",
+      "Gene:5663",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:936",
+      "Gene:213",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:936",
+      "Gene:6622",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:936",
+      "Gene:25978",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:936",
+      "Gene:6647",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:936",
+      "Gene:7124",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:936",
+      "Gene:203228",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:936",
+      "Gene:3553",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:936",
+      "Gene:6531",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:936",
+      "Gene:3630",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:936",
+      "Gene:348",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:936",
+      "Gene:2896",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:936",
+      "Gene:3064",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:936",
+      "Gene:4137",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:936",
+      "Gene:2670",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:936",
+      "Gene:4747",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:936",
+      "Gene:199",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:936",
+      "Gene:2521",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:936",
+      "Gene:3569",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:936",
+      "Gene:627",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 5,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:936",
+      "Gene:1742",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 6,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:12217",
+      "Variant:rs429358",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 7,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Disease:DOID:936",
+      "Disease:DOID:9255",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 8,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:GJSURZIOUXUGAL-UHFFFAOYSA-N",
+      "Gene:2896",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 8,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:GJSURZIOUXUGAL-UHFFFAOYSA-N",
+      "Gene:6622",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 8,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:DIWRORZWFLOCLC-UHFFFAOYSA-N",
+      "Gene:6622",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 8,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:ZPEIMTDSQAKGNT-UHFFFAOYSA-N",
+      "Gene:2896",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 8,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:LNEPOXFFQSENCJ-UHFFFAOYSA-N",
+      "Gene:6622",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 8,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:KVWDHTXUZHCGIO-UHFFFAOYSA-N",
+      "Gene:6622",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 8,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:JYTNQNCOQXFQPK-MRXNPFEDSA-N",
+      "Gene:351",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 8,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:JYTNQNCOQXFQPK-MRXNPFEDSA-N",
+      "Gene:6622",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 8,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:URKOMYMAXPYINW-UHFFFAOYSA-N",
+      "Gene:6622",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 8,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:PIJVFDBKTWXHHD-HIFRSBDPSA-N",
+      "Gene:6622",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 8,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:ADEBPBSSDYVVLD-UHFFFAOYSA-N",
+      "Gene:2896",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 8,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:ADEBPBSSDYVVLD-UHFFFAOYSA-N",
+      "Gene:3553",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 8,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:ADEBPBSSDYVVLD-UHFFFAOYSA-N",
+      "Gene:6622",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 8,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:DRLFMBDRBRZALE-UHFFFAOYSA-N",
+      "Gene:351",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 8,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:DRLFMBDRBRZALE-UHFFFAOYSA-N",
+      "Gene:6622",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 8,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:RZVAJINKPMORJF-UHFFFAOYSA-N",
+      "Gene:6622",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 8,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:NIJJYAXOARWZEE-UHFFFAOYSA-N",
+      "Gene:348",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 8,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:NIJJYAXOARWZEE-UHFFFAOYSA-N",
+      "Gene:6622",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:2896",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:1103",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:3569",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:6531",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:213",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:120892",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:7124",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:3630",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:4137",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:3064",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:4129",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:6620",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:5663",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:25978",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:43",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:2521",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:54209",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:590",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:23435",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:3553",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:348",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:2670",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:1742",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:10971",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:6647",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:351",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:5664",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:6622",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:203228",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:7415",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:5621",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:627",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:5071",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:23621",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:199",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0000955",
+      "Gene:4747",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0002336",
+      "Gene:4137",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0002336",
+      "Gene:120892",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0002336",
+      "Gene:3064",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0002336",
+      "Gene:2896",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0002336",
+      "Gene:4129",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0002336",
+      "Gene:6620",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0002336",
+      "Gene:5663",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0002336",
+      "Gene:25978",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0002336",
+      "Gene:43",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0002336",
+      "Gene:2521",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0002336",
+      "Gene:54209",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0002336",
+      "Gene:590",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0002336",
+      "Gene:23435",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 9,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Anatomy:UBERON:0002336",
+      "Gene:3553",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 10,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:ZPEIMTDSQAKGNT-UHFFFAOYSA-N",
+      "Gene:2896",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 10,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:JYTNQNCOQXFQPK-MRXNPFEDSA-N",
+      "Gene:3553",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 10,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:URKOMYMAXPYINW-UHFFFAOYSA-N",
+      "Gene:348",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 10,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:NETZHAKZCGBWSS-CEDHKZHLSA-N",
+      "Gene:3553",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 10,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:DRLFMBDRBRZALE-UHFFFAOYSA-N",
+      "Gene:3553",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 10,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:RZVAJINKPMORJF-UHFFFAOYSA-N",
+      "Gene:348",
+      "Disease:DOID:1307"
+    ]
+  },
+  {
+    "schema_index": 10,
+    "nodes": [
+      "Disease:DOID:8645",
+      "Compound:inchikey:NIJJYAXOARWZEE-UHFFFAOYSA-N",
+      "Gene:3553",
+      "Disease:DOID:1307"
+    ]
+  }
+]
