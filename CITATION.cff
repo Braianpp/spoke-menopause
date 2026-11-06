@@ -8,6 +8,8 @@ authors:
   - family-names: Peetoom
     given-names: Braian
 repository-code: "https://github.com/Braianpp/spoke-menopause"
+doi: "10.5281/zenodo.23992518"
+url: "https://zenodo.org/records/23992518"
 license: MIT
 keywords:
   - knowledge graph

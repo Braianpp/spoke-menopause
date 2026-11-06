@@ -92,6 +92,8 @@ The portable panels use the current numerical tables. In particular, Figure 3B r
 
 The analysis code is released under the MIT license; see [LICENSE](LICENSE).
 
-Use the versioned repository release when citing the code. `CITATION.cff` provides software citation metadata. A Zenodo DOI can be added after the archive is actually published. No DOI has been claimed in this source package.
+Version 1.0.0 is archived in Zenodo at [doi:10.5281/zenodo.23992518](https://doi.org/10.5281/zenodo.23992518). `CITATION.cff` provides software citation metadata. The archived ZIP is identical to the original GitHub v1.0.0 release.
+
+The archive preserves the October 2026 Q1–Q10 and Supplementary Table 1–40 numbering. The November manuscript renumbered the first three questions and added a clinical EHR analysis; that later analysis and patient-level data are not included in this release.
 
 This repository does not grant rights to the underlying SPOKE database or its upstream sources. Data access and upstream terms remain separate from the license for the analysis code.
